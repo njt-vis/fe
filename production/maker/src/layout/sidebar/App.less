@@ -1,0 +1,37 @@
+.layout-sidebar {
+  position: absolute;
+  top: var(--vis-nav-height);
+  bottom: 0;
+  left: 0;
+  width: var(--vis-sidebar-width);
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .sidebar-item {
+    width: 44px;
+    height: 44px;
+    margin: 12px auto;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 3px;
+
+    &:hover,
+    &.s-active {
+      background-color: var(--vis-gray-09);
+
+      .item-icon {
+        color: var(--vis-primary);
+      }
+    }
+  }
+
+  .item-icon {
+    color: var(--vis-gray-03);
+    width: 2em;
+    height: 2em;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    fill: currentColor;
+  }
+}

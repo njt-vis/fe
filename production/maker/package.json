@@ -1,0 +1,29 @@
+{
+  "name": "@njt-vis/maker",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@njt-vis/types": "workspace:^1.0.0",
+    "@types/systemjs": "^6.1.1",
+    "typescript": "^4.5.5",
+    "vite": "^2.8.0",
+    "vite-plugin-solid": "^2.2.5"
+  },
+  "dependencies": {
+    "@njt-vis/maker-adapter": "workspace:^0.0.0",
+    "@njt-vis/maker-inherent-sdk": "workspace:^0.0.0",
+    "@njt-vis/maker-theme": "workspace:*",
+    "@njt-vis/store-debug": "workspace:^0.0.0",
+    "@njt-vis/vdriver": "workspace:*",
+    "classnames": "^2.3.1",
+    "less": "^4.1.2",
+    "solid-js": "^1.3.7"
+  }
+}

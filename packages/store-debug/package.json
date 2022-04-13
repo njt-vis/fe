@@ -1,0 +1,31 @@
+{
+  "name": "@njt-vis/store-debug",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "xiaoYown <qzy09101018@sina.com>",
+  "license": "ISC",
+  "main": "lib/store-debug.cjs",
+  "module": "lib/store-debug.mjs",
+  "types": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "scripts": {
+    "dev": "lib-cli dev",
+    "build": "lib-cli build"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@types/node": "^16.11.2",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@njt-vis/types": "workspace:^1.0.0",
+    "@njt-vis/utils": "workspace:^0.0.0",
+    "socket.io-client": "^4.4.1"
+  }
+}

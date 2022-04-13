@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" type="image/ico" href="/src/assets/favicon.ico" />
+    <title>Vis</title>
+    <style id="vis-style-base"></style>
+    <style id="vis-style-theme"></style>
+    <style data-id="vis-style-editor-structure"></style>
+    <script src="/assets/system.js"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="vis-editor" layout-sidebar="shrink">
+      <!-- 画布区域 -->
+      <div id="vis-canvas"></div>
+      <!-- 菜单栏, 仅 browser 端需要 -->
+      <div id="vis-menu"></div>
+      <!-- 导航栏 -->
+      <div id="vis-nav"></div>
+      <!-- 侧边栏(左) -->
+      <div id="vis-sidebar"></div>
+      <!-- 元素属性栏(右) -->
+      <div id="vis-attrbar"></div>
+    </div>
+
+    <script src="/src/index.tsx" type="module"></script>
+  </body>
+</html>

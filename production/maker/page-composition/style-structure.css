@@ -1,0 +1,80 @@
+*,
+::before,
+::after {
+  --vis-sidebar-width: 60px;
+  --vis-sidebar-stretch-width: 360px;
+  --vis-nav-height: 60px;
+  --vis-attrbar-width: 280px;
+}
+
+/* MARK: 防止 mac 滑动 */
+html {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#vis-editor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#vis-menu {
+
+}
+
+#vis-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: var(--vis-sidebar-width);
+  height: var(--vis-nav-height);
+  border-bottom: 1px solid var(--vis-layout-split-line);
+  background-color: var(--vis-nav-background);
+}
+
+#vis-sidebar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: var(--vis-sidebar-width);
+  padding-top: 0;
+  border-right: 1px solid var(--vis-layout-split-line);
+  background-color: var(--vis-sidebar-background);
+}
+
+#vis-attrbar {
+  position: absolute;
+  top: var(--vis-nav-height);
+  bottom: 0;
+  right: 0;
+  width: var(--vis-attrbar-width);
+  border-left: 1px solid var(--vis-layout-split-line);
+  background-color: var(--vis-toolbar-background);
+}
+
+#vis-canvas {
+  position: absolute;
+  top: var(--vis-nav-height);
+  right: var(--vis-attrbar-width);
+  bottom: 0;
+  left: var(--vis-sidebar-width);
+  background-color: var(--vis-canvas-background);
+}
+
+/* MARK: layout - sidebar stretch */
+[layout-sidebar=stretch] #vis-nav {
+  left: var(--vis-sidebar-stretch-width);
+}
+[layout-sidebar=stretch] #vis-sidebar {
+  width: var(--vis-sidebar-stretch-width);
+}
+[layout-sidebar=stretch] #vis-canvas {
+  left: var(--vis-sidebar-stretch-width);
+}

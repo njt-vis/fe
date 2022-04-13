@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "declaration": true,
+    "declarationDir": ".",
+    "strict": true,
+    "allowJs": true,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "lib": ["dom", "es2015", "es2016", "es2017", "esnext"],
+    "types": ["@njt-vis/types"],
+    "baseUrl": "./src",
+    "newLine": "lf"
+  },
+  "include": ["src"],
+  "exclude": ["./node_modules"],
+  "lib": ["dom", "es2015", "es2016", "es2017", "esnext"]
+}

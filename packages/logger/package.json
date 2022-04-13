@@ -1,0 +1,28 @@
+{
+  "name": "@njt-vis/plugin-logger",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "xiaoYown <qzy09101018@sina.com>",
+  "license": "ISC",
+  "main": "lib/cjs/logger.js",
+  "module": "lib/esm/logger.js",
+  "bundle": "lib/browser/logger.js",
+  "types": "lib/esm/logger.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "scripts": {
+    "dev": "lib-cli dev",
+    "build": "lib-cli build"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.2",
+    "typescript": "^4.4.4"
+  }
+}

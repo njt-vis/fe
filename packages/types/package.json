@@ -1,0 +1,12 @@
+{
+  "name": "@njt-vis/types",
+  "version": "1.0.0",
+  "description": "index.d.ts",
+  "main": "index.d.ts",
+  "types": "index.d.ts",
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "*.d.ts"
+  ]
+}

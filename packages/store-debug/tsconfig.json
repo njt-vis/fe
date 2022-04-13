@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "strict": true,
+    "allowJs": true,
+    "declaration": true,
+    "declarationDir": ".",
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "lib": ["dom", "es2015", "es2016", "es2017", "esnext"],
+    "baseUrl": "./src",
+    "newLine": "lf",
+    "types": ["@njt-vis/types"]
+  },
+  "include": ["src"],
+  "exclude": ["./node_modules"],
+  "lib": ["dom", "es2015", "es2016", "es2017", "esnext"]
+}
