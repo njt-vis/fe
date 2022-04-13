@@ -18,6 +18,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "lib-cli dev -s",
     "build": "lib-cli build"
   },
