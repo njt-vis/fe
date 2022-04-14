@@ -1,0 +1,12 @@
+{
+  "name": "@njt-vis/desktop",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^18.0.3"
+  }
+}
