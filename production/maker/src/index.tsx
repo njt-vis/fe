@@ -1,5 +1,5 @@
 /* @refresh reload */
-import { ControlCenter } from '@njt-vis/vdriver';
+import { ControlCenter } from '@njt-vis/maker-comm-hub';
 import { setTheme } from '@njt-vis/maker-theme';
 import { prepare as prepareRoot } from './layout/root';
 import { renderMenu } from './layout/menu';

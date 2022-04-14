@@ -1,4 +1,8 @@
-import { ControlCenter, ControlDriver, ControlTypes } from '@njt-vis/vdriver';
+import {
+  ControlCenter,
+  ControlDriver,
+  ControlTypes,
+} from '@njt-vis/maker-comm-hub';
 
 const { registerDriver, registerCommand, execCommand, receiveCommand } =
   ControlCenter;

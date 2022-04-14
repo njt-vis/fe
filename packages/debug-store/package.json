@@ -1,11 +1,11 @@
 {
-  "name": "@njt-vis/store-debug",
+  "name": "@njt-vis/debug-store",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "xiaoYown <qzy09101018@sina.com>",
   "license": "ISC",
-  "main": "lib/store-debug.cjs",
-  "module": "lib/store-debug.mjs",
+  "main": "lib/debug-store.cjs",
+  "module": "lib/debug-store.mjs",
   "types": "lib/index.d.ts",
   "directories": {
     "lib": "lib"

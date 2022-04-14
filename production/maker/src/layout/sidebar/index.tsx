@@ -1,7 +1,7 @@
 import { render } from 'solid-js/web';
 
 import { sidebar as sidebarCommon } from '@njt-vis/maker-inherent-sdk';
-import { sidebar as sidebarDebug, switchOpen } from '@njt-vis/store-debug';
+import { sidebar as sidebarDebug, switchOpen } from '@njt-vis/debug-store';
 
 import { INHERENT_COMMANDS } from '../../commands';
 import Swap from '../swap';

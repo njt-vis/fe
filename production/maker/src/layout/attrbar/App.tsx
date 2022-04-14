@@ -5,6 +5,6 @@ interface PropsModel {
   store: StoreModel;
 }
 
-const App: Component<PropsModel> = () => <div>attrbar</div>;
+const App: Component<PropsModel> = () => <div></div>;
 
 export default App;

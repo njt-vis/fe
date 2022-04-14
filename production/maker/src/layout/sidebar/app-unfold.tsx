@@ -1,7 +1,7 @@
 import { createEffect, For, onCleanup } from 'solid-js';
 
 // import { sidebar } from '@njt-vis/maker-inherent-sdk';
-import { onPluginHotReplace, offPluginHotReplace } from '@njt-vis/store-debug';
+import { onPluginHotReplace, offPluginHotReplace } from '@njt-vis/debug-store';
 import { SidebarItemBonder } from '@njt-vis/maker-adapter';
 
 type UnfoldContainerProps = {

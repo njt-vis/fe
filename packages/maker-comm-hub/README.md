@@ -13,5 +13,5 @@ const libTemplate = require('@lib-cli/lib-template');
 ### dev
 
 ```sh
-pm2 start --name njt-vis-maker-vdriver npm -- run dev
+pm2 start --name njt-vis-maker-comm-hub npm -- run dev
 ```

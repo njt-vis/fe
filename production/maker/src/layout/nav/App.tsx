@@ -5,6 +5,6 @@ interface PropsModel {
   store: StoreModel;
 }
 
-const App: Component<PropsModel> = () => <div>nav</div>;
+const App: Component<PropsModel> = () => <div></div>;
 
 export default App;

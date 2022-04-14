@@ -1,13 +1,11 @@
 {
-  "name": "@njt-vis/vdriver",
+  "name": "@njt-vis/maker-comm-hub",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "xiaoYown <qzy09101018@sina.com>",
   "license": "ISC",
-  "main": "lib/cjs/main.js",
-  "module": "lib/esm/main.js",
-  "bundle": "lib/browser/main.js",
-  "types": "lib/esm/main.d.ts",
+  "module": "lib/maker-comm-hub.mjs",
+  "types": "lib/index.d.ts",
   "directories": {
     "lib": "lib"
   },
