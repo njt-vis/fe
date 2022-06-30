@@ -3,6 +3,8 @@ enum EVENTS {
   SWITCH_OPEN = 'SWITCH_OPEN',
   /** 重新加载插件 */
   RELOAD_DEBUG_PLUGIN = 'RELOAD_DEBUG_PLUGIN',
+  /** debug 配置信息更新 */
+  DEBUG_SETTING_UPDATE = 'DEBUG_SETTING_UPDATE',
 
   /* MARK: socket 相关 */
   /** 热更成功 */

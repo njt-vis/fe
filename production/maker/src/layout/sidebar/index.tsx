@@ -4,7 +4,7 @@ import { sidebar as sidebarCommon } from '@njt-vis/maker-inherent-sdk';
 import { sidebar as sidebarDebug, switchOpen } from '@njt-vis/debug-store';
 
 import { INHERENT_COMMANDS } from '../../commands';
-import Swap from '../swap';
+import Swap from '../../swap';
 
 import App from './App';
 import AppUnfold from './app-unfold';

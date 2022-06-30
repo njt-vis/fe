@@ -10,7 +10,7 @@ import {
 } from './utils';
 import { EVENTS } from './events';
 
-interface StoreDebug {
+export interface DebugStoreModel {
   isOpen: boolean;
   plugins: PluginSettingMode[];
 }
@@ -19,7 +19,7 @@ const listener = new Listener();
 
 const socketMap = new Map<string, Socket>();
 
-const originStore: StoreDebug = Object.create({
+const originStore: DebugStoreModel = Object.create({
   isOpen: false,
   plugins: [
     {
@@ -37,20 +37,29 @@ const originStore: StoreDebug = Object.create({
   ],
 });
 
-const store = common.createDisabledProxy<StoreDebug>(originStore);
+const store = common.createDisabledProxy<DebugStoreModel>(originStore);
 
 /** 获取 debug 开启/关闭 */
-const isOpen = () => store.isOpen;
+const isOpen = (): boolean => store.isOpen;
+
+/** 获取插件配置信息 */
+const getDebugSetting = (): DebugStoreModel => store;
+
+const onDebugSettingChange = (fn: (data: DebugStoreModel) => void): void => {
+  listener.on(EVENTS.DEBUG_SETTING_UPDATE, () => {
+    fn(store);
+  });
+};
 
 /** 监听 debug 开启/关闭 */
-const onOpenChange = (fn: (isOpen: boolean) => void) => {
+const onOpenChange = (fn: (isOpen: boolean) => void): void => {
   listener.on(EVENTS.SWITCH_OPEN, () => {
     fn(store.isOpen);
   });
 };
 
 /** socket 连接 */
-const connectPlugin = (app: Sidebar.ItemModel) => {
+const connectPlugin = (app: Sidebar.ItemModel): void => {
   const { hostname, port } = app;
   const socket = io(`http://${hostname}:${port}`);
   // client-side
@@ -70,12 +79,11 @@ const connectPlugin = (app: Sidebar.ItemModel) => {
   });
 };
 
-const onPluginHotReplace = (name: string, fn) => {
+const onPluginHotReplace = (name: string, fn): void => {
   listener.on(`${EVENTS.RELOAD_DEBUG_PLUGIN}:${name}`, fn);
 };
 
-const offPluginHotReplace = (name: string, fn) => {
-  console.log('off');
+const offPluginHotReplace = (name: string, fn): void => {
   listener.off(`${EVENTS.RELOAD_DEBUG_PLUGIN}:${name}`, fn);
 };
 
@@ -106,6 +114,8 @@ export {
   isOpen,
   switchOpen,
   onOpenChange,
+  getDebugSetting,
+  onDebugSettingChange,
   onPluginHotReplace,
   offPluginHotReplace,
   sidebar,

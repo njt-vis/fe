@@ -1,3 +1,5 @@
+import { colord } from 'colord';
+
 import themeDefault from 'default-theme';
 import viewConfig from './view-config';
 
@@ -47,6 +49,17 @@ function flatJson(json: ThemeModel, preffix = ''): ThemeFlattenModel {
   return flatten;
 }
 
+function hex2Rgb(theme: ThemeFlattenModel): ThemeFlattenModel {
+  const themeRgb: ThemeFlattenModel = {};
+
+  Reflect.ownKeys(theme).forEach((key): void => {
+    const { r, g, b } = colord(theme[key as string]).toRgb();
+    themeRgb[`${key as string}-rgb`] = `${r}, ${g}, ${b}`;
+  });
+
+  return themeRgb;
+}
+
 /**
  * set using theme colors
  * @param {ThemeModel} theme - not must
@@ -58,10 +71,13 @@ export function setTheme(theme?: ThemeModel): void {
     // using
     ...(theme ? flatJson(theme) : {}),
   };
+  const themeRgb = hex2Rgb(themeJson);
   let content = '';
 
-  Reflect.ownKeys(themeJson).forEach(key => {
-    content += `${key as string}: ${themeJson[key as string]};\n`;
+  Reflect.ownKeys({ ...themeJson, ...themeRgb }).forEach(key => {
+    content += `${key as string}: ${
+      { ...themeJson, ...themeRgb }[key as string]
+    };\n`;
   });
 
   const style = `

@@ -17,13 +17,41 @@
     "ecmaVersion": 2020,
     "sourceType": "module"
   },
-  "plugins": ["prettier", "@typescript-eslint"],
+  "plugins": [
+    "prettier",
+    "@typescript-eslint"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.jsx",
+        "*.tsx"
+      ],
+      "rules": {
+        "@typescript-eslint/explicit-module-boundary-types": [
+          "off"
+        ]
+      }
+    }
+  ],
   "rules": {
     "prettier/prettier": "error",
-    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
     "global-require": "off",
-    "semi": ["error", "always"],
-    "quotes": ["error", "single"],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
     "no-unused-expressions": [
       "error",
       {
@@ -32,7 +60,15 @@
         "allowTaggedTemplates": true
       }
     ],
-    "spaced-comment": ["error", "always", { "markers": ["/"] }],
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "markers": [
+          "/"
+        ]
+      }
+    ],
     "import/extensions": [
       "error",
       "never",
@@ -51,7 +87,10 @@
     "no-underscore-dangle": "off",
     "no-restricted-syntax": "off",
     "no-use-before-define": "off",
-    "linebreak-style": ["error", "unix"],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-static-element-interactions": "off",
     "@typescript-eslint/camelcase": "off",

@@ -4,8 +4,8 @@
   "description": "> TODO: description",
   "author": "xiaoYown <qzy09101018@sina.com>",
   "license": "ISC",
-  "module": "lib/esm/logger.mjs",
-  "types": "lib/esm/logger.d.ts",
+  "module": "lib/logger.mjs",
+  "types": "lib/logger.d.ts",
   "directories": {
     "lib": "lib"
   },

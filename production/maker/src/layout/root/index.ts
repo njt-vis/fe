@@ -1,6 +1,6 @@
 import { INHERENT_COMMANDS } from '../../commands';
 import { SIDEBARE_LAYOUT } from '../../constants/layout';
-import Swap from '../swap';
+import Swap from '../../swap';
 
 const layoutComponents = ['sidebar'];
 
@@ -37,7 +37,11 @@ class RootContainer extends Swap {
   /** 编辑器布局修改 */
   private handleLayout = (newLayout: LayoutModel, oldLayout: LayoutModel) => {
     layoutComponents.forEach((key: string) => {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       if (newLayout[key] !== oldLayout[key]) {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
         this.handleLayoutChange(key, newLayout[key]);
       }
     });

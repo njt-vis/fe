@@ -6,6 +6,7 @@ import { renderMenu } from './layout/menu';
 import { renderSidebar } from './layout/sidebar';
 import { renderNav } from './layout/nav';
 import { renderAttrbar } from './layout/attrbar';
+import { renderDebugGui } from './components/debug-gui';
 import { inherentCommands } from './commands';
 
 const { DRIVERS, prepare, registerCommand } = ControlCenter;
@@ -38,6 +39,10 @@ function bootstrap() {
   });
   renderAttrbar({
     id: 'vis-attrbar',
+    driver: DRIVERS.ATTRBAR,
+  });
+  renderDebugGui({
+    id: 'vis-debug',
     driver: DRIVERS.ATTRBAR,
   });
 }

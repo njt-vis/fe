@@ -23,9 +23,7 @@ html {
   left: 0;
 }
 
-#vis-menu {
-
-}
+#vis-menu {}
 
 #vis-nav {
   position: absolute;
@@ -68,13 +66,22 @@ html {
   background-color: var(--vis-canvas-background);
 }
 
+#vis-debug {
+  position: absolute;
+  right: calc(var(--vis-attrbar-width) + 10px);
+  bottom: 10px;
+  z-index: 10000;
+}
+
 /* MARK: layout - sidebar stretch */
 [layout-sidebar=stretch] #vis-nav {
   left: var(--vis-sidebar-stretch-width);
 }
+
 [layout-sidebar=stretch] #vis-sidebar {
   width: var(--vis-sidebar-stretch-width);
 }
+
 [layout-sidebar=stretch] #vis-canvas {
   left: var(--vis-sidebar-stretch-width);
 }

@@ -87,3 +87,8 @@ declare namespace PluginMode {
     };
   };
 }
+
+declare interface VisSdk {
+  getProjectPath: () => string;
+  openProjectFile: (projectPath: string) => void;
+}

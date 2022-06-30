@@ -1,0 +1,1141 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 13,
+    "total": 13,
+    "workspacePrefix": "/Volumes/dev-2/projects/njt/njt-vis-fe"
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@njt-tools-open/solidjs-component-docs-template",
+      "version": "1.0.0",
+      "scripts": {
+        "serve": "s25c serve",
+        "build": "s25c build"
+      },
+      "author": "xiaoYown",
+      "private": true,
+      "dependencies": {
+        "@suid/icons-material": "0.1.0",
+        "@suid/material": "0.1.0",
+        "highlight.js": "^11.5.1",
+        "solid-app-router": "^0.3.2",
+        "solid-js": "^1.3.17"
+      },
+      "devDependencies": {
+        "@babel/core": "^7.14.8",
+        "@njt-tools-open/solidjs-component-docs-creator": "1.0.6",
+        "@types/node": "^17.0.21",
+        "simple-progress-webpack-plugin": "^2.0.0",
+        "typescript": "^4.4.4"
+      },
+      "browserslist": [
+        "chrome >= 30",
+        "firefox >= 30",
+        "ie >= 9",
+        "safari >= 7",
+        "ios >= 6",
+        "android >=4"
+      ]
+    },
+    "prefix": "/Volumes/dev-2/projects/njt/njt-vis-fe/docs/material"
+  },
+  "2 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@njt-vis/plugin-logger",
+      "version": "0.0.0",
+      "description": "> TODO: description",
+      "author": "xiaoYown <qzy09101018@sina.com>",
+      "license": "ISC",
+      "module": "lib/logger.mjs",
+      "types": "lib/logger.d.ts",
+      "directories": {
+        "lib": "lib"
+      },
+      "files": [
+        "lib"
+      ],
+      "publishConfig": {
+        "registry": "http://registry.npmjs.org/"
+      },
+      "scripts": {
+        "preinstall": "npx only-allow pnpm",
+        "dev": "lib-cli dev",
+        "build": "lib-cli build"
+      },
+      "devDependencies": {
+        "@types/node": "^16.11.2",
+        "typescript": "^4.4.4"
+      }
+    },
+    "prefix": "/Volumes/dev-2/projects/njt/njt-vis-fe/packages/logger"
+  },
+  "3 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@njt-vis/maker-comm-hub",
+      "version": "0.0.0",
+      "description": "> TODO: description",
+      "author": "xiaoYown <qzy09101018@sina.com>",
+      "license": "ISC",
+      "module": "lib/maker-comm-hub.mjs",
+      "types": "lib/index.d.ts",
+      "directories": {
+        "lib": "lib"
+      },
+      "files": [
+        "lib"
+      ],
+      "publishConfig": {
+        "registry": "http://registry.npmjs.org/"
+      },
+      "scripts": {
+        "preinstall": "npx only-allow pnpm",
+        "dev": "lib-cli dev -s",
+        "build": "lib-cli build"
+      },
+      "devDependencies": {
+        "@types/node": "^16.11.2",
+        "typescript": "^4.4.4"
+      }
+    },
+    "prefix": "/Volumes/dev-2/projects/njt/njt-vis-fe/packages/maker-comm-hub"
+  },
+  "4 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@njt-vis/maker-theme",
+      "version": "0.0.0",
+      "description": "> TODO: description",
+      "author": "xiaoYown <qzy09101018@sina.com>",
+      "license": "ISC",
+      "module": "lib/maker-theme.mjs",
+      "types": "lib/index.d.ts",
+      "directories": {
+        "lib": "lib"
+      },
+      "files": [
+        "lib"
+      ],
+      "publishConfig": {
+        "registry": "http://registry.npmjs.org/"
+      },
+      "scripts": {
+        "preinstall": "npx only-allow pnpm",
+        "dev": "lib-cli dev",
+        "build": "lib-cli build"
+      },
+      "devDependencies": {
+        "@babel/preset-env": "^7.16.11",
+        "@types/node": "^16.11.2",
+        "tslib": "^2.3.1",
+        "typescript": "^4.4.4"
+      },
+      "dependencies": {
+        "colord": "^2.9.2"
+      }
+    },
+    "prefix": "/Volumes/dev-2/projects/njt/njt-vis-fe/packages/maker-theme"
+  },
+  "5 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@njt-vis/material",
+      "version": "1.0.0",
+      "description": "",
+      "main": "lib/index.js",
+      "types": "lib/index.d.ts",
+      "scripts": {
+        "preinstall": "npx only-allow pnpm",
+        "build": "npm run build:tsx",
+        "build:tsx": "tsc --build --clean & tsc",
+        "build:less": "lessc src/* > lib/* && tsccss -o ./lib",
+        "watch": "tsc --build -w"
+      },
+      "author": "",
+      "license": "ISC",
+      "devDependencies": {
+        "less": "^4.1.2",
+        "solid-js": "^1.3.7",
+        "tsccss": "^1.0.0",
+        "typescript": "^4.5.5"
+      },
+      "peerDependencies": {
+        "solid-js": "^1.3.7"
+      },
+      "publishConfig": {
+        "directory": "lib"
+      },
+      "dependencies": {
+        "highlight.js": "^11.5.1",
+        "vite": "^2.8.0"
+      }
+    },
+    "prefix": "/Volumes/dev-2/projects/njt/njt-vis-fe/packages/material"
+  },
+  "6 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@njt-vis/types",
+      "version": "1.0.0",
+      "description": "index.d.ts",
+      "main": "index.d.ts",
+      "types": "index.d.ts",
+      "author": "",
+      "license": "ISC",
+      "files": [
+        "*.d.ts"
+      ]
+    },
+    "prefix": "/Volumes/dev-2/projects/njt/njt-vis-fe/packages/types"
+  },
+  "7 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@njt-vis/utils",
+      "version": "0.0.0",
+      "description": "> TODO: description",
+      "author": "xiaoYown <qzy09101018@sina.com>",
+      "license": "ISC",
+      "main": "lib/utils.cjs",
+      "module": "lib/utils.mjs",
+      "types": "lib/index.d.ts",
+      "directories": {
+        "lib": "lib"
+      },
+      "publishConfig": {
+        "registry": "http://registry.npmjs.org/"
+      },
+      "scripts": {
+        "preinstall": "npx only-allow pnpm",
+        "dev": "lib-cli dev",
+        "build": "lib-cli build"
+      },
+      "devDependencies": {
+        "@types/node": "^16.11.2",
+        "tslib": "^2.3.1",
+        "typescript": "^4.4.4"
+      },
+      "dependencies": {
+        "@njt-vis/types": "workspace:^1.0.0"
+      }
+    },
+    "prefix": "/Volumes/dev-2/projects/njt/njt-vis-fe/packages/utils"
+  },
+  "8 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@njt-vis/debug-store",
+      "version": "0.0.0",
+      "description": "> TODO: description",
+      "author": "xiaoYown <qzy09101018@sina.com>",
+      "license": "ISC",
+      "main": "lib/debug-store.cjs",
+      "module": "lib/debug-store.mjs",
+      "types": "lib/index.d.ts",
+      "directories": {
+        "lib": "lib"
+      },
+      "publishConfig": {
+        "registry": "http://registry.npmjs.org/"
+      },
+      "scripts": {
+        "preinstall": "npx only-allow pnpm",
+        "dev": "lib-cli dev",
+        "build": "lib-cli build"
+      },
+      "devDependencies": {
+        "@babel/preset-env": "^7.16.11",
+        "@types/node": "^16.11.2",
+        "tslib": "^2.3.1",
+        "typescript": "^4.4.4"
+      },
+      "dependencies": {
+        "@njt-vis/types": "workspace:^1.0.0",
+        "@njt-vis/utils": "workspace:^0.0.0",
+        "socket.io-client": "^4.4.1"
+      }
+    },
+    "prefix": "/Volumes/dev-2/projects/njt/njt-vis-fe/packages/debug-store"
+  },
+  "9 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@njt-vis/maker-adapter",
+      "version": "0.0.0",
+      "description": "> TODO: description",
+      "author": "xiaoYown <qzy09101018@sina.com>",
+      "license": "ISC",
+      "module": "lib/maker-adapter.mjs",
+      "types": "lib/index.d.ts",
+      "directories": {
+        "lib": "lib"
+      },
+      "files": [
+        "lib"
+      ],
+      "publishConfig": {
+        "registry": "http://registry.npmjs.org/"
+      },
+      "scripts": {
+        "preinstall": "npx only-allow pnpm",
+        "dev": "lib-cli dev",
+        "build": "lib-cli build"
+      },
+      "devDependencies": {
+        "@babel/preset-env": "^7.16.11",
+        "@types/node": "^16.11.2",
+        "tslib": "^2.3.1",
+        "typescript": "^4.4.4"
+      },
+      "dependencies": {
+        "@njt-vis/plugin-logger": "workspace:^0.0.0",
+        "@njt-vis/types": "workspace:^1.0.0",
+        "@njt-vis/utils": "workspace:^0.0.0",
+        "@types/systemjs": "^6.1.1"
+      }
+    },
+    "prefix": "/Volumes/dev-2/projects/njt/njt-vis-fe/packages/maker-adapter"
+  },
+  "10 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@njt-vis/maker-inherent-sdk",
+      "version": "0.0.0",
+      "description": "> TODO: description",
+      "author": "xiaoYown <qzy09101018@sina.com>",
+      "license": "ISC",
+      "module": "lib/maker-inherent-sdk.mjs",
+      "types": "lib/index.d.ts",
+      "directories": {
+        "lib": "lib"
+      },
+      "publishConfig": {
+        "registry": "http://registry.npmjs.org/"
+      },
+      "scripts": {
+        "preinstall": "npx only-allow pnpm",
+        "dev": "lib-cli dev",
+        "build": "lib-cli build"
+      },
+      "devDependencies": {
+        "@babel/preset-env": "^7.16.11",
+        "@types/node": "^16.11.2",
+        "tslib": "^2.3.1",
+        "typescript": "^4.4.4"
+      },
+      "dependencies": {
+        "@njt-vis/types": "workspace:^1.0.0",
+        "@njt-vis/utils": "workspace:^0.0.0"
+      }
+    },
+    "prefix": "/Volumes/dev-2/projects/njt/njt-vis-fe/packages/maker-inherent-sdk"
+  },
+  "11 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@njt-vis/desktop",
+      "version": "1.0.0",
+      "scripts": {
+        "preinstall": "npx only-allow pnpm",
+        "build": "tsc",
+        "watch": "tsc -w",
+        "lint": "eslint -c .eslintrc --ext .ts ./src",
+        "start": "cross-env NODE_ENV=development electron ./dist/main.js"
+      },
+      "repository": "https://github.com/electron/electron-quick-start-typescript",
+      "keywords": [
+        "Electron",
+        "quick",
+        "start",
+        "tutorial",
+        "demo",
+        "typescript"
+      ],
+      "devDependencies": {
+        "@njt-vis/types": "workspace:^1.0.0",
+        "@typescript-eslint/eslint-plugin": "^4.33.0",
+        "@typescript-eslint/parser": "^4.33.0",
+        "cross-env": "^7.0.3",
+        "electron": "^18.0.3",
+        "eslint": "^7.32.0",
+        "typescript": "^4.5.5"
+      },
+      "dependencies": {
+        "@njt-vis/utils": "workspace:^0.0.0"
+      }
+    },
+    "prefix": "/Volumes/dev-2/projects/njt/njt-vis-fe/production/desktop"
+  },
+  "12 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@njt-vis/maker",
+      "version": "0.0.0",
+      "description": "",
+      "scripts": {
+        "preinstall": "npx only-allow pnpm",
+        "start": "vite",
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview"
+      },
+      "license": "MIT",
+      "devDependencies": {
+        "@njt-vis/types": "workspace:^1.0.0",
+        "@types/systemjs": "^6.1.1",
+        "typescript": "^4.5.5",
+        "vite": "^2.8.0",
+        "vite-plugin-solid": "^2.2.5"
+      },
+      "dependencies": {
+        "@njt-vis/debug-store": "workspace:^0.0.0",
+        "@njt-vis/maker-adapter": "workspace:^0.0.0",
+        "@njt-vis/maker-comm-hub": "workspace:*",
+        "@njt-vis/maker-inherent-sdk": "workspace:^0.0.0",
+        "@njt-vis/maker-theme": "workspace:*",
+        "@njt-vis/material": "workspace:^1.0.0",
+        "classnames": "^2.3.1",
+        "less": "^4.1.2",
+        "solid-js": "^1.3.7"
+      }
+    },
+    "prefix": "/Volumes/dev-2/projects/njt/njt-vis-fe/production/maker"
+  },
+  "13 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "njt-vis-fe",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "preinstall": "npx only-allow pnpm",
+        "build:prepare": "pnpm --filter './packages/**' build",
+        "commit": "git-cz",
+        "lint": "npm run lint:es && npm run lint:prettier",
+        "lint:ts": "tsc --project ./tsconfig.json --noEmit",
+        "lint:es": "eslint --ext .ts,.tsx ./ --cache --quiet",
+        "lint:prettier": "prettier --list-different \"**/*.{ts,tsx,less,json,yml,yaml,md}\"",
+        "fix": "npm run fix:es && npm run fix:prettier",
+        "fix:es": "eslint --ext .ts,.tsx ./ --cache --quiet --fix",
+        "fix:prettier": "prettier --write \"**/*.{ts,tsx,less,json,yml,yaml,md}\"",
+        "prepare": "husky install"
+      },
+      "author": "",
+      "license": "ISC",
+      "devDependencies": {
+        "@types/node": "^16.10.1",
+        "@typescript-eslint/eslint-plugin": "^4.30.0",
+        "@typescript-eslint/parser": "^4.30.0",
+        "eslint": "^7.32.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.24.2",
+        "eslint-plugin-prettier": "^4.0.0",
+        "husky": "^7.0.4",
+        "lint-staged": "^12.1.2",
+        "prettier": "^2.3.2",
+        "typescript": "^4.4.3",
+        "@changesets/cli": "^2.21.1",
+        "@commitlint/cli": "^13.1.0",
+        "@commitlint/config-conventional": "^13.1.0",
+        "@commitlint/cz-commitlint": "^16.2.3",
+        "commitizen": "^4.2.4"
+      },
+      "peerDependencies": {
+        "inquirer": "@^8.0.0"
+      },
+      "gitHooks": {
+        "pre-commit": "lint-staged"
+      },
+      "lint-staged": {
+        "**/*.ts?(x)": [
+          "npm run lint",
+          "npm run fix",
+          "git add"
+        ]
+      },
+      "config": {
+        "commitizen": {
+          "path": "@commitlint/cz-commitlint"
+        }
+      },
+      "engines": {
+        "node": ">=14",
+        "pnpm": ">=6"
+      },
+      "packageManager": "pnpm@6.31.0"
+    },
+    "prefix": "/Volumes/dev-2/projects/njt/njt-vis-fe"
+  },
+  "14 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Volumes/dev-2/.pnpm-store/v3",
+    "virtualStoreDir": "/Volumes/dev-2/projects/njt/njt-vis-fe/node_modules/.pnpm"
+  },
+  "15 debug pnpm:stage": {
+    "prefix": "/Volumes/dev-2/projects/njt/njt-vis-fe",
+    "stage": "resolution_started"
+  },
+  "16 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/@babel/core/7.17.10",
+    "wanted": {
+      "dependentId": "docs/material",
+      "name": "@babel/core",
+      "rawSpec": "^7.14.8"
+    }
+  },
+  "17 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/@types/node/17.0.40",
+    "wanted": {
+      "dependentId": "docs/material",
+      "name": "@types/node",
+      "rawSpec": "^17.0.21"
+    }
+  },
+  "18 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/simple-progress-webpack-plugin/2.0.0",
+    "wanted": {
+      "dependentId": "docs/material",
+      "name": "simple-progress-webpack-plugin",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "19 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/typescript/4.6.3",
+    "wanted": {
+      "dependentId": "docs/material",
+      "name": "typescript",
+      "rawSpec": "^4.4.4"
+    }
+  },
+  "20 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/@suid/icons-material/0.1.0",
+    "wanted": {
+      "dependentId": "docs/material",
+      "name": "@suid/icons-material",
+      "rawSpec": "0.1.0"
+    }
+  },
+  "21 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/@suid/material/0.1.0",
+    "wanted": {
+      "dependentId": "docs/material",
+      "name": "@suid/material",
+      "rawSpec": "0.1.0"
+    }
+  },
+  "22 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/highlight.js/11.5.1",
+    "wanted": {
+      "dependentId": "docs/material",
+      "name": "highlight.js",
+      "rawSpec": "^11.5.1"
+    }
+  },
+  "23 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/solid-app-router/0.3.2",
+    "wanted": {
+      "dependentId": "docs/material",
+      "name": "solid-app-router",
+      "rawSpec": "^0.3.2"
+    }
+  },
+  "24 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/solid-js/1.4.3",
+    "wanted": {
+      "dependentId": "docs/material",
+      "name": "solid-js",
+      "rawSpec": "^1.3.17"
+    }
+  },
+  "25 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@babel/core/7.17.10",
+    "requester": "/Volumes/dev-2/projects/njt/njt-vis-fe",
+    "status": "found_in_store"
+  },
+  "26 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@babel/core/7.17.10",
+    "requester": "/Volumes/dev-2/projects/njt/njt-vis-fe",
+    "status": "resolved"
+  },
+  "27 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/simple-progress-webpack-plugin/2.0.0",
+    "requester": "/Volumes/dev-2/projects/njt/njt-vis-fe",
+    "status": "found_in_store"
+  },
+  "28 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/simple-progress-webpack-plugin/2.0.0",
+    "requester": "/Volumes/dev-2/projects/njt/njt-vis-fe",
+    "status": "resolved"
+  },
+  "29 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@types/node/17.0.40",
+    "requester": "/Volumes/dev-2/projects/njt/njt-vis-fe",
+    "status": "found_in_store"
+  },
+  "30 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@types/node/17.0.40",
+    "requester": "/Volumes/dev-2/projects/njt/njt-vis-fe",
+    "status": "resolved"
+  },
+  "31 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/typescript/4.6.3",
+    "requester": "/Volumes/dev-2/projects/njt/njt-vis-fe",
+    "status": "found_in_store"
+  },
+  "32 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/typescript/4.6.3",
+    "requester": "/Volumes/dev-2/projects/njt/njt-vis-fe",
+    "status": "resolved"
+  },
+  "33 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/colord/2.9.2",
+    "wanted": {
+      "dependentId": "packages/maker-theme",
+      "name": "colord",
+      "rawSpec": "^2.9.2"
+    }
+  },
+  "34 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/colord/2.9.2",
+    "requester": "/Volumes/dev-2/projects/njt/njt-vis-fe",
+    "status": "resolved"
+  },
+  "35 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/less/4.1.3",
+    "wanted": {
+      "dependentId": "packages/material",
+      "name": "less",
+      "rawSpec": "^4.1.2"
+    }
+  },
+  "36 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/less/4.1.3",
+    "requester": "/Volumes/dev-2/projects/njt/njt-vis-fe",
+    "status": "resolved"
+  },
+  "37 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/tsccss/1.0.0",
+    "wanted": {
+      "dependentId": "packages/material",
+      "name": "tsccss",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "38 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/tsccss/1.0.0",
+    "requester": "/Volumes/dev-2/projects/njt/njt-vis-fe",
+    "status": "resolved"
+  },
+  "39 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/tslib/2.4.0",
+    "wanted": {
+      "dependentId": "packages/maker-theme",
+      "name": "tslib",
+      "rawSpec": "^2.3.1"
+    }
+  },
+  "40 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/tslib/2.4.0",
+    "wanted": {
+      "dependentId": "packages/utils",
+      "name": "tslib",
+      "rawSpec": "^2.3.1"
+    }
+  },
+  "41 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/tslib/2.4.0",
+    "requester": "/Volumes/dev-2/projects/njt/njt-vis-fe",
+    "status": "resolved"
+  },
+  "42 debug pnpm:_dependency_resolved": {
+    "resolution": "link:../types",
+    "wanted": {
+      "dependentId": "packages/utils",
+      "name": "@njt-vis/types",
+      "rawSpec": "workspace:^1.0.0"
+    }
+  },
+  "43 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/tslib/2.4.0",
+    "wanted": {
+      "dependentId": "packages/debug-store",
+      "name": "tslib",
+      "rawSpec": "^2.3.1"
+    }
+  },
+  "44 error pnpm": {
+    "code": "ERR_PNPM_NO_MATCHING_VERSION",
+    "packageMeta": {
+      "dist-tags": {
+        "beta": "1.0.1-beta.0",
+        "latest": "1.0.4",
+        "rc": "1.0.1-rc.1"
+      },
+      "modified": "2022-05-30T12:52:04.165Z",
+      "name": "@njt-tools-open/solidjs-component-docs-creator",
+      "versions": {
+        "1.0.1-beta.0": {
+          "name": "@njt-tools-open/solidjs-component-docs-creator",
+          "version": "1.0.1-beta.0",
+          "dependencies": {
+            "@babel/core": "^7.14.8",
+            "@babel/generator": "^7.18.0",
+            "@babel/parser": "^7.18.0",
+            "@babel/plugin-proposal-class-properties": "^7.17.12",
+            "@babel/plugin-proposal-object-rest-spread": "^7.18.0",
+            "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+            "@babel/preset-env": "^7.17.10",
+            "@babel/preset-typescript": "^7.17.12",
+            "@babel/template": "^7.16.7",
+            "@babel/traverse": "^7.17.10",
+            "@babel/types": "^7.18.0",
+            "@njt-tools-open/solidjs-component-markdown-loader": "^1.0.1-beta.0",
+            "@types/node": "^17.0.21",
+            "autoprefixer": "^10.4.2",
+            "babel-loader": "^8.2.2",
+            "babel-plugin-import": "^1.13.3",
+            "babel-preset-solid": "^1.4.2",
+            "chalk": "^2.4.2",
+            "colored-progress-bar-webpack-plugin": "^1.2.4",
+            "commander": "^9.2.0",
+            "css-loader": "^6.2.0",
+            "html-webpack-plugin": "^5.5.0",
+            "loader-utils": "^3.2.0",
+            "markdown-it": "^13.0.1",
+            "mini-css-extract-plugin": "^2.6.0",
+            "postcss": "^8.4.8",
+            "postcss-loader": "^6.2.1",
+            "postcss-preset-env": "^7.4.2",
+            "progress-bar-webpack-plugin": "^2.1.0",
+            "recursive-copy": "^2.0.14",
+            "simple-progress-webpack-plugin": "^2.0.0",
+            "solid-app-router": "^0.3.2",
+            "solid-js": "^1.4.1",
+            "toml": "^3.0.0",
+            "ts-loader": "^9.2.8",
+            "typescript": "^4.4.4",
+            "typescript-plugin-css-modules": "^3.4.0",
+            "webpack": "^5.70.0",
+            "webpack-dev-server": "^4.9.0",
+            "webpack-merge": "^5.8.0"
+          },
+          "bin": {
+            "s25c": "bin/index.js"
+          },
+          "directories": {},
+          "dist": {
+            "integrity": "sha512-qACAuLINr9Xqe/TNgVNN5SSQ4M+Ik0XXWQF6f9z4yUUbEHXvNzdqkHEXAAcQd7mINce8FAylQmWfKs6jBf+Bwg==",
+            "shasum": "fb500bcacf66e329cb04e84e4fc20fa27a10f40b",
+            "tarball": "https://registry.npmmirror.com/@njt-tools-open/solidjs-component-docs-creator/-/solidjs-component-docs-creator-1.0.1-beta.0.tgz",
+            "fileCount": 19,
+            "unpackedSize": 180741,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEUCIQDvcXOhkxYlSYXnIe7qIip/B8Z6sqVS41J+/AlUR73JWgIgVmcZl/7Z8b70KQ55lElZAzWhA0PE6yhE7bwXKz93RV8="
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJilHClACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmqDFhAAk0MkwwftL2gkYFCRDqZxkFZSOQhWpQEMGOJffjQbz71bwKX5\r\nbEyp/SlBmuaGKLmR/Kz5sGjQw35bt3bz+tCbOaFESNRIyPQ8852S0ztUaDK9\r\nKlGtLoP43EkluPA3IcXNiG2nL/F1braolmZ/TTcKoZMGj97mJPp8XiA2CW/0\r\nHZm0+5Y6OefNUXnJ+5lUEv/D97GGeLsOJaWw3+h6Wmb+5eOZCCPWfhfbx4f9\r\nTh6xzuC96lsVsq2GeMvsYivuuBqgK18L/3TKbWtl9E3B4hycQWmGdD7HXJAP\r\nqtCtrVYDlr6uLD2VwDfF8zkrcbKy2pcYfX9U1AiL/H05nQRAqJJYvjCrGgKz\r\nXZ7KWVOilrTTHDb1wawNZH1hK9COyEubKr/PbQYOnjrdNcbYFWclgPEcHqZW\r\nRbSNM3xTyd5MFPzAUACfUvAQjuo/ZXhayNXB2krY4fELQRdmYaY52/ST3din\r\nRxH9anFCMQ3C14+PEz47rDrcRDCuSF2lXzJn8E/za4EJozgN8cIoA+C3WMP5\r\nMNg+ZkjkhMKSvXIU6HVr/TbLeyJFwyyp/njkRthzHTZUSVXHK8bAOYUJUkqy\r\nUq0hEVRzSOyhOY/0JG4bb+H6ubd9Kd53/iL+iNe9rt/xAH2+GbZu74wKY/Yr\r\nc8T+VY2ae0YqfhCzMqIrZma9kWvgA5w79Os=\r\n=5YBj\r\n-----END PGP SIGNATURE-----\r\n",
+            "size": 31540
+          },
+          "_hasShrinkwrap": false
+        },
+        "1.0.1-rc.0": {
+          "name": "@njt-tools-open/solidjs-component-docs-creator",
+          "version": "1.0.1-rc.0",
+          "dependencies": {
+            "@babel/core": "^7.14.8",
+            "@babel/generator": "^7.18.0",
+            "@babel/parser": "^7.18.0",
+            "@babel/plugin-proposal-class-properties": "^7.17.12",
+            "@babel/plugin-proposal-object-rest-spread": "^7.18.0",
+            "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+            "@babel/preset-env": "^7.17.10",
+            "@babel/preset-typescript": "^7.17.12",
+            "@babel/template": "^7.16.7",
+            "@babel/traverse": "^7.17.10",
+            "@babel/types": "^7.18.0",
+            "@njt-tools-open/solidjs-component-markdown-loader": "^1.0.1-rc.0",
+            "@types/node": "^17.0.21",
+            "autoprefixer": "^10.4.2",
+            "babel-loader": "^8.2.2",
+            "babel-plugin-import": "^1.13.3",
+            "babel-preset-solid": "^1.4.2",
+            "chalk": "^2.4.2",
+            "colored-progress-bar-webpack-plugin": "^1.2.4",
+            "commander": "^9.2.0",
+            "css-loader": "^6.2.0",
+            "html-webpack-plugin": "^5.5.0",
+            "loader-utils": "^3.2.0",
+            "markdown-it": "^13.0.1",
+            "mini-css-extract-plugin": "^2.6.0",
+            "postcss": "^8.4.8",
+            "postcss-loader": "^6.2.1",
+            "postcss-preset-env": "^7.4.2",
+            "progress-bar-webpack-plugin": "^2.1.0",
+            "recursive-copy": "^2.0.14",
+            "simple-progress-webpack-plugin": "^2.0.0",
+            "solid-app-router": "^0.3.2",
+            "solid-js": "^1.4.1",
+            "toml": "^3.0.0",
+            "ts-loader": "^9.2.8",
+            "typescript": "^4.4.4",
+            "typescript-plugin-css-modules": "^3.4.0",
+            "webpack": "^5.70.0",
+            "webpack-dev-server": "^4.9.0",
+            "webpack-merge": "^5.8.0"
+          },
+          "bin": {
+            "s25c": "bin/index.js"
+          },
+          "directories": {},
+          "dist": {
+            "integrity": "sha512-Ro0XKexLpYMgwWFnNqOYvE3v8EFgZelauQBiwZfwtXyJXpOIFYh+ovO92mocusePomtpw36tUNjOznQ8eyzvdA==",
+            "shasum": "c5c67fbcb7fbc298166946406126d149afcfa4e1",
+            "tarball": "https://registry.npmmirror.com/@njt-tools-open/solidjs-component-docs-creator/-/solidjs-component-docs-creator-1.0.1-rc.0.tgz",
+            "fileCount": 19,
+            "unpackedSize": 180737,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEYCIQDVFCb56TqPw4Qh8AACcJ5UfknjFRS88vDCYycCi57TVwIhANIvZJc31PJC/jBSXBf1+hU7XpmufCB2Z3498aALVgWR"
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJilHYrACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrUow//cAOKVn1U0v1mioBuyNhfBAcOEkoBOcwdz4UOkZ0E3/i/WRnq\r\nRCknaV+RDlS/8wKvlZPE5pGXXvqrc5yDBxFfslyEuLRD8ZgpCdUGiykB+K3j\r\nLV0hhlQWnblH7WBbCKREBhbfhuYAZv1pWNDC4ipGsuQS/wxufuR9mFcWe+6P\r\ngIHpqJhtNxo0PgBySCUqiqd6muKZfhp+1oNDyzpkmvqzANsH8Lkd774Xd8Ad\r\nOwOX+k2WZPCYC7ITqpoyy4x3DuZ2I94jx5SB4fXkbaPuAFmJk0qFlNbc1XPg\r\nV4WdevgEfMzpmDd142a8L/XgHNDaGuM0zfXZ8OAItib9y/8H2jk8Whnfc5O9\r\npEHKfgBBu2MrTy6zRJXuowl99uaY7ioqBb595x4d2hSIH5CY5pS3A5MSkZmE\r\nP1YVZ55w2JJQ8q70pXSccit+qZCkKvEXwaZSb/gSm7tFN9HHLgf9NNuv3WmU\r\nhgEAZxxBFy4X7Omj8SXLfselIBERDg3TXBzqdsnEVh2nxz8xodcTKjdIfD4l\r\n0Ic36WqdAMk+U4Tmkmp/Rn5WSyhZn4n8u0uRQNfiN63Qr6ILjzlUOmcPM2K9\r\nwDHoZA/ilpt406mZphgW6A7uVE0JJyedldj2x0Vng9A5+/w23wW5mbmtV1Dy\r\nsLru+wkMB/mTDX5g6wi083S7+bC4mFyCrtA=\r\n=bx2a\r\n-----END PGP SIGNATURE-----\r\n",
+            "size": 31539
+          },
+          "_hasShrinkwrap": false
+        },
+        "1.0.4": {
+          "name": "@njt-tools-open/solidjs-component-docs-creator",
+          "version": "1.0.4",
+          "dependencies": {
+            "@babel/core": "^7.14.8",
+            "@babel/generator": "^7.18.0",
+            "@babel/parser": "^7.18.0",
+            "@babel/plugin-proposal-class-properties": "^7.17.12",
+            "@babel/plugin-proposal-object-rest-spread": "^7.18.0",
+            "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+            "@babel/preset-env": "^7.17.10",
+            "@babel/preset-typescript": "^7.17.12",
+            "@babel/template": "^7.16.7",
+            "@babel/traverse": "^7.17.10",
+            "@babel/types": "^7.18.0",
+            "@njt-tools-open/solidjs-component-markdown-loader": "^1.0.2",
+            "@types/node": "^17.0.21",
+            "autoprefixer": "^10.4.2",
+            "babel-loader": "^8.2.2",
+            "babel-plugin-import": "^1.13.3",
+            "babel-preset-solid": "^1.4.2",
+            "chalk": "^2.4.2",
+            "colored-progress-bar-webpack-plugin": "^1.2.4",
+            "commander": "^9.2.0",
+            "css-loader": "^6.2.0",
+            "html-webpack-plugin": "^5.5.0",
+            "loader-utils": "^3.2.0",
+            "markdown-it": "^13.0.1",
+            "mini-css-extract-plugin": "^2.6.0",
+            "postcss": "^8.4.8",
+            "postcss-loader": "^6.2.1",
+            "postcss-preset-env": "^7.4.2",
+            "progress-bar-webpack-plugin": "^2.1.0",
+            "recursive-copy": "^2.0.14",
+            "simple-progress-webpack-plugin": "^2.0.0",
+            "solid-app-router": "^0.3.2",
+            "solid-js": "^1.4.1",
+            "toml": "^3.0.0",
+            "ts-loader": "^9.2.8",
+            "typescript": "^4.4.4",
+            "typescript-plugin-css-modules": "^3.4.0",
+            "webpack": "^5.70.0",
+            "webpack-dev-server": "^4.9.0",
+            "webpack-merge": "^5.8.0"
+          },
+          "bin": {
+            "s25c": "bin/index.js"
+          },
+          "directories": {},
+          "dist": {
+            "integrity": "sha512-JGNIY9gLTL/gaSvon/mM6i+GPfo6T4EaF74GfPk3Wz2sCOVhMpQIYfXT+rZ2hoHUHvJsrcVeNVivOn7FIa5ReA==",
+            "shasum": "18ca41b286c41e1938a57a62b9ae94446b256ca9",
+            "tarball": "https://registry.npmmirror.com/@njt-tools-open/solidjs-component-docs-creator/-/solidjs-component-docs-creator-1.0.4.tgz",
+            "fileCount": 19,
+            "unpackedSize": 184006,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEYCIQDhTJMUU4G/RiGFfw32W2AM9vokJ0q0irhZzfZgzySjWQIhAITO1ilLtl4dcKq8iAAFsWJHt3ejZaxstfUrJs9ScELo"
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJilJa+ACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmpdAQ/9Fpz9OfNr5Fj90KPXfHcygjXH4EvclZB4Km3m2uU47x1phnBg\r\nY+Wwq4W92+GAZMnnkura4mMJwR39c0so4HXRW/xQpXlAxjEco7Ij6lp52P/F\r\nzQw9C22eC/sWyvv0aiInD5XsDAiJzm0+LsNuU1M7lJh/9z9oKmg/Rq7DFAvR\r\njz1b2DprboL4tvESxZgJkx6IbCbDbtgBY53aWAJF0AFtU7T7ILb3eE9bHrqr\r\n+gxLbBJQfXgOH0rR8ZE1BZwSZB3i2A4V5/LlvmBuPlQ4sSE2rnJNN9KRI6JS\r\nGCaludCROT2UrZoQ4bEWxebgg5mqiIX45o/vW0ScN9ufaQB4Zvu4vHU7YflI\r\njh/AKKk8ry9FdT5JwqZyhdl0kLtF5yzpH6+d+FYTFe9Jc0c8x2Vpiz192zRX\r\nQjlaa/V/KRLhSl8P/d8jmc1zn3t7ndT7ikpC/ZjaLrczASQVZemut1z0Z0vV\r\nZHfKid0g72HHPs6RJhmslRJThuD5jcaewFQ6yREAEaTgFs1c/MeISUUqSoox\r\nPfJAxPM6ZxNOmCjVH3h9y4s/wBLeTQD+n4vN8s8mtLuWXdF4CanaQMGuMj4a\r\npTOmULvsbx9GPoU2WtoF0hRw+IXEXzEJavNlhO7ZXWZ9y6IlAtVdNlfNPjcv\r\nlFjria2FLCbPTa/N3fcu5zFhsSjccGe2syQ=\r\n=InNj\r\n-----END PGP SIGNATURE-----\r\n",
+            "size": 32340
+          },
+          "_hasShrinkwrap": false
+        },
+        "1.0.1-rc.1": {
+          "name": "@njt-tools-open/solidjs-component-docs-creator",
+          "version": "1.0.1-rc.1",
+          "dependencies": {
+            "@babel/core": "^7.14.8",
+            "@babel/generator": "^7.18.0",
+            "@babel/parser": "^7.18.0",
+            "@babel/plugin-proposal-class-properties": "^7.17.12",
+            "@babel/plugin-proposal-object-rest-spread": "^7.18.0",
+            "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+            "@babel/preset-env": "^7.17.10",
+            "@babel/preset-typescript": "^7.17.12",
+            "@babel/template": "^7.16.7",
+            "@babel/traverse": "^7.17.10",
+            "@babel/types": "^7.18.0",
+            "@njt-tools-open/solidjs-component-markdown-loader": "^1.0.1-rc.1",
+            "@types/node": "^17.0.21",
+            "autoprefixer": "^10.4.2",
+            "babel-loader": "^8.2.2",
+            "babel-plugin-import": "^1.13.3",
+            "babel-preset-solid": "^1.4.2",
+            "chalk": "^2.4.2",
+            "colored-progress-bar-webpack-plugin": "^1.2.4",
+            "commander": "^9.2.0",
+            "css-loader": "^6.2.0",
+            "html-webpack-plugin": "^5.5.0",
+            "loader-utils": "^3.2.0",
+            "markdown-it": "^13.0.1",
+            "mini-css-extract-plugin": "^2.6.0",
+            "postcss": "^8.4.8",
+            "postcss-loader": "^6.2.1",
+            "postcss-preset-env": "^7.4.2",
+            "progress-bar-webpack-plugin": "^2.1.0",
+            "recursive-copy": "^2.0.14",
+            "simple-progress-webpack-plugin": "^2.0.0",
+            "solid-app-router": "^0.3.2",
+            "solid-js": "^1.4.1",
+            "toml": "^3.0.0",
+            "ts-loader": "^9.2.8",
+            "typescript": "^4.4.4",
+            "typescript-plugin-css-modules": "^3.4.0",
+            "webpack": "^5.70.0",
+            "webpack-dev-server": "^4.9.0",
+            "webpack-merge": "^5.8.0"
+          },
+          "bin": {
+            "s25c": "bin/index.js"
+          },
+          "directories": {},
+          "dist": {
+            "integrity": "sha512-A1PVDc8LJNuNdsGd3976SXUkA1V3cdQeuzGNpxRut9bjuTR9YVZcRkNn0j/IUaLc+YWvbNsWS76ktFjbJP9CAA==",
+            "shasum": "6b4e82158d511c76aa00e6e4c6df6b9f1feb9805",
+            "tarball": "https://registry.npmmirror.com/@njt-tools-open/solidjs-component-docs-creator/-/solidjs-component-docs-creator-1.0.1-rc.1.tgz",
+            "fileCount": 19,
+            "unpackedSize": 183774,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEUCIQCbRSD45OqIywZBZs0Dzz4suyBdiyQrlMAKz0+HG5M7yQIgFZaZHuPF8gW91VvACmMto4c6y6Zeql/XVsmGk4IiDlo="
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJilI1NACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmqn5xAAgbsmiFD0/ZgnYK6Ezu+cP0qI08XJy3751ZFOknO73VQ7N/BF\r\nnLuI416c7fhqE2lVjWlGV+ethSi+UlIbPBV0rrWvVA0K7WC75ibGsbFeI4Mz\r\nnd6v/WYCjjVuHkNrwHM5iMLwHUBytbHUgk03UmEfAsn/RU3EznnqirUzjJPe\r\nZPQ90q1fp0iAGn4xxy1aQ9RTa1R8O5pj+EmoPo3mEszzZBntwju/XK61iV1U\r\neImXp4+R+tO7PxFG1mNey15zYHyMb7L02dw5f9uFJvbqn/bUVFjUlAEBH/sV\r\nMNwxYV0J3+q/deV9U2YSAJl30zlU6lqE3Y/fhcWU+sADfY2cslxCIp145Bf3\r\nBgLkog/PHWPSSyqEkrXYdhwQr+6OsMyy/bWHomRNPcfN+1bsO4xL9pEn1Ouv\r\nTLLPMQNIeMhD9QGHc3YYcLCnHqmj0p5DTXVKjEt+E73LRCLrBFv/isxmHuYt\r\n67673mAqXepp55EKIZ+ywks9B4iKhi2EeoJVtqWBOtFGTW3+z5ddl4OzrVXA\r\nlBQUo/VBOPx9saEK+Lp/v+DKasZ5tkUG+Ad64BaUfuU95j9lz/cToNuHATl1\r\nkJc9v5nd7Bl+WMfYrvwZ9RPLBftd3vgTIa0axC5pZ7HX5zX8o8dIbXxzYx2r\r\n0T8+PLLYdZ8NH1t5sqBsG+qPf+8EalczCZA=\r\n=WSIS\r\n-----END PGP SIGNATURE-----\r\n",
+            "size": 32246
+          },
+          "_hasShrinkwrap": false
+        },
+        "1.0.1": {
+          "name": "@njt-tools-open/solidjs-component-docs-creator",
+          "version": "1.0.1",
+          "dependencies": {
+            "@babel/core": "^7.14.8",
+            "@babel/generator": "^7.18.0",
+            "@babel/parser": "^7.18.0",
+            "@babel/plugin-proposal-class-properties": "^7.17.12",
+            "@babel/plugin-proposal-object-rest-spread": "^7.18.0",
+            "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+            "@babel/preset-env": "^7.17.10",
+            "@babel/preset-typescript": "^7.17.12",
+            "@babel/template": "^7.16.7",
+            "@babel/traverse": "^7.17.10",
+            "@babel/types": "^7.18.0",
+            "@njt-tools-open/solidjs-component-markdown-loader": "^1.0.1",
+            "@types/node": "^17.0.21",
+            "autoprefixer": "^10.4.2",
+            "babel-loader": "^8.2.2",
+            "babel-plugin-import": "^1.13.3",
+            "babel-preset-solid": "^1.4.2",
+            "chalk": "^2.4.2",
+            "colored-progress-bar-webpack-plugin": "^1.2.4",
+            "commander": "^9.2.0",
+            "css-loader": "^6.2.0",
+            "html-webpack-plugin": "^5.5.0",
+            "loader-utils": "^3.2.0",
+            "markdown-it": "^13.0.1",
+            "mini-css-extract-plugin": "^2.6.0",
+            "postcss": "^8.4.8",
+            "postcss-loader": "^6.2.1",
+            "postcss-preset-env": "^7.4.2",
+            "progress-bar-webpack-plugin": "^2.1.0",
+            "recursive-copy": "^2.0.14",
+            "simple-progress-webpack-plugin": "^2.0.0",
+            "solid-app-router": "^0.3.2",
+            "solid-js": "^1.4.1",
+            "toml": "^3.0.0",
+            "ts-loader": "^9.2.8",
+            "typescript": "^4.4.4",
+            "typescript-plugin-css-modules": "^3.4.0",
+            "webpack": "^5.70.0",
+            "webpack-dev-server": "^4.9.0",
+            "webpack-merge": "^5.8.0"
+          },
+          "bin": {
+            "s25c": "bin/index.js"
+          },
+          "directories": {},
+          "dist": {
+            "integrity": "sha512-NOArQmcTvyMUZkRJin5IqLvSWE5yxHhiv0KBZwpbOiPN2WSGDZovioWqIKAOUHAPtxny6r/ng8nqN0h9+elF2w==",
+            "shasum": "80cf25c7dd52ce0c9345a0d8176c7d89cd63043f",
+            "tarball": "https://registry.npmmirror.com/@njt-tools-open/solidjs-component-docs-creator/-/solidjs-component-docs-creator-1.0.1.tgz",
+            "fileCount": 19,
+            "unpackedSize": 183764,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEYCIQCzpgpKJ7gHjo4YAChc4aS4+kkEctE0pbDhNZdCoDrdjgIhAMCjO5ttst3f0e0jROtjJtE3v+R/5rhRBlP6nSCjO9pf"
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJilJHxACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmry9g/+LqtTiWZrj0RAPuKLQ4ZsvPnI0PJZDnwrjwsABaUUQQwUZq2b\r\nSPTXaVmDTfcxL+wBPZkWDsAOaZUhAQh6nhn+4cDuiFUjt5xMLmfpV74w1oPS\r\ncoMjhQUqTApJ4FsDdnEBli8+iLaiS8Q/UmAAiApJ/9vrwANXJxZWdGVrJ9sv\r\nJSxwNlDIZE5qxfwo5dlXqXc5MC068mX5j0UUaS3VaHl5SOIyeEcTWo1WNacb\r\n8UVVbqUfLP7Y4Qf6GBep+gm9ueX6aH0v8UBbZytHgBD4WwIdaVbjZEy70vVV\r\nu745ynuCHFBueTDgEDFal2ZmgkpD0uNhg46phQagRtrtXMKKWdbjxB14M/yF\r\n5/RlA4dlTOQtSQ4I8MPYazZXel4lo/NGXd9ZcopmElWhIlHXLXnsb0eSU1U6\r\nZ/itmAVj8p5IVmL6XJnfW0XZhhITQg8XsIGnohxLPN4L3llV5xgFSGDwSwvT\r\nr5WEbwv8rB1lGkF3JdG8YXZkuRjqV56PaW085OpXv9uoavND6vBOVvb7vxBl\r\nEXzkyWvS3I116wc68sMYxe6VxcpPgyEZhEZwRWVh5jQz8U309IoQfm1EFeMg\r\nOhnQ0WGPN1XGghxm0yWrDE6Qjji6/HqAbftSzYnrXef2nACwSm9g6I+s26LS\r\nqfq4QgllgZbSDCZS5h5vPWyAUW30fOXNcgQ=\r\n=fM/m\r\n-----END PGP SIGNATURE-----\r\n",
+            "size": 32241
+          },
+          "_hasShrinkwrap": false
+        },
+        "1.0.2": {
+          "name": "@njt-tools-open/solidjs-component-docs-creator",
+          "version": "1.0.2",
+          "dependencies": {
+            "@babel/core": "^7.14.8",
+            "@babel/generator": "^7.18.0",
+            "@babel/parser": "^7.18.0",
+            "@babel/plugin-proposal-class-properties": "^7.17.12",
+            "@babel/plugin-proposal-object-rest-spread": "^7.18.0",
+            "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+            "@babel/preset-env": "^7.17.10",
+            "@babel/preset-typescript": "^7.17.12",
+            "@babel/template": "^7.16.7",
+            "@babel/traverse": "^7.17.10",
+            "@babel/types": "^7.18.0",
+            "@njt-tools-open/solidjs-component-markdown-loader": "^1.0.2",
+            "@types/node": "^17.0.21",
+            "autoprefixer": "^10.4.2",
+            "babel-loader": "^8.2.2",
+            "babel-plugin-import": "^1.13.3",
+            "babel-preset-solid": "^1.4.2",
+            "chalk": "^2.4.2",
+            "colored-progress-bar-webpack-plugin": "^1.2.4",
+            "commander": "^9.2.0",
+            "css-loader": "^6.2.0",
+            "html-webpack-plugin": "^5.5.0",
+            "loader-utils": "^3.2.0",
+            "markdown-it": "^13.0.1",
+            "mini-css-extract-plugin": "^2.6.0",
+            "postcss": "^8.4.8",
+            "postcss-loader": "^6.2.1",
+            "postcss-preset-env": "^7.4.2",
+            "progress-bar-webpack-plugin": "^2.1.0",
+            "recursive-copy": "^2.0.14",
+            "simple-progress-webpack-plugin": "^2.0.0",
+            "solid-app-router": "^0.3.2",
+            "solid-js": "^1.4.1",
+            "toml": "^3.0.0",
+            "ts-loader": "^9.2.8",
+            "typescript": "^4.4.4",
+            "typescript-plugin-css-modules": "^3.4.0",
+            "webpack": "^5.70.0",
+            "webpack-dev-server": "^4.9.0",
+            "webpack-merge": "^5.8.0"
+          },
+          "bin": {
+            "s25c": "bin/index.js"
+          },
+          "directories": {},
+          "dist": {
+            "integrity": "sha512-I5UhXZd7G9cQuNmKkhms9PF2WtSg3S7aOpqYcXk6jWAsJyYPrnXSbDMofZgXMUksbH8P8wIhE8H6rAOLD2t+CQ==",
+            "shasum": "3a91b9878bd48a12b203465c9f3e2bcc4d27e974",
+            "tarball": "https://registry.npmmirror.com/@njt-tools-open/solidjs-component-docs-creator/-/solidjs-component-docs-creator-1.0.2.tgz",
+            "fileCount": 19,
+            "unpackedSize": 184028,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEUCICtdnlWmxUO5QBPYV/2iVr5uW7coyXeseTxxPRYtFXjxAiEAtv4IFi7O5ITAXmIu/oH5Pr9RKr8mXn7SD6NPLoK9UlY="
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJilJTrACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmp+XA//VM//HPQzGiyNIyK1ApL72fjkVyv7Hb6yQe9smhGCB4ifvilT\r\n/xbn2MYxMdb7+cwAgQzsUNJPToE7OKJAqNtTpKgcFNdgKHRHd03Z55jG3Khn\r\nyYObcfjyG9K0gImZj0ZEzVcqrJbPKdtmftMHUJs/G/SByz9KONSeaOekN0RC\r\n85CAQM149eX36kbYds67HZgWpMAtWYEx8SS9Mp8Tqoo4sjHIqTZMrzDSx70H\r\nhGqDIynUj8wmU8hsUB209chXGLc39y7C+EyBS0gaiwL+eBKlBJ1ahiZv8qOO\r\nS/i6uhEYg4CTVmNV1zx9R+9dXriRvXvjCiNwjWdJekCrdTQ3bHNJYcYM0C7C\r\nYMcEwSFbyppgHDLAL3vOou5VWGmKWG2hJ9vaL+nqutEWg4XIW37EGK4lv6hc\r\n6do3BS2cY2nglkpim0ojdby9GPePSgLeVVZODrWgSrJ0Mbkb2nfog8vqsmbh\r\nFQlQtxJ8/LFAM08StlenACBMJmrrspWj9UD2HzNoBj41/w9BregZVwJjyq0J\r\nHCT5H2QsKRF3Z+bAGSVM2a8/zkbfSqoaj4/ZIPkz9jSdbMip8/kbrhdjQU5/\r\nY8GSvFYr8UxUZYxSwNgIXxdkRpGznuz/RCYE5BzvNZJxV6MijoRIrb1ZskK0\r\nGExWfZgcsNXhO0ujyZtG4mwb0SaXHlWYA1g=\r\n=SDH+\r\n-----END PGP SIGNATURE-----\r\n",
+            "size": 32343
+          },
+          "_hasShrinkwrap": false
+        },
+        "1.0.3": {
+          "name": "@njt-tools-open/solidjs-component-docs-creator",
+          "version": "1.0.3",
+          "dependencies": {
+            "@babel/core": "^7.14.8",
+            "@babel/generator": "^7.18.0",
+            "@babel/parser": "^7.18.0",
+            "@babel/plugin-proposal-class-properties": "^7.17.12",
+            "@babel/plugin-proposal-object-rest-spread": "^7.18.0",
+            "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+            "@babel/preset-env": "^7.17.10",
+            "@babel/preset-typescript": "^7.17.12",
+            "@babel/template": "^7.16.7",
+            "@babel/traverse": "^7.17.10",
+            "@babel/types": "^7.18.0",
+            "@njt-tools-open/solidjs-component-markdown-loader": "^1.0.2",
+            "@types/node": "^17.0.21",
+            "autoprefixer": "^10.4.2",
+            "babel-loader": "^8.2.2",
+            "babel-plugin-import": "^1.13.3",
+            "babel-preset-solid": "^1.4.2",
+            "chalk": "^2.4.2",
+            "colored-progress-bar-webpack-plugin": "^1.2.4",
+            "commander": "^9.2.0",
+            "css-loader": "^6.2.0",
+            "html-webpack-plugin": "^5.5.0",
+            "loader-utils": "^3.2.0",
+            "markdown-it": "^13.0.1",
+            "mini-css-extract-plugin": "^2.6.0",
+            "postcss": "^8.4.8",
+            "postcss-loader": "^6.2.1",
+            "postcss-preset-env": "^7.4.2",
+            "progress-bar-webpack-plugin": "^2.1.0",
+            "recursive-copy": "^2.0.14",
+            "simple-progress-webpack-plugin": "^2.0.0",
+            "solid-app-router": "^0.3.2",
+            "solid-js": "^1.4.1",
+            "toml": "^3.0.0",
+            "ts-loader": "^9.2.8",
+            "typescript": "^4.4.4",
+            "typescript-plugin-css-modules": "^3.4.0",
+            "webpack": "^5.70.0",
+            "webpack-dev-server": "^4.9.0",
+            "webpack-merge": "^5.8.0"
+          },
+          "bin": {
+            "s25c": "bin/index.js"
+          },
+          "directories": {},
+          "dist": {
+            "integrity": "sha512-kofRn7nQ0g9fKxh9Jj5XyZg5mPu8Pl6hfSmgtCIKDvVOBdU2vgxEGTnnbHcj8HSs2Qmd1Hx16tTkEGT8R8L+Ag==",
+            "shasum": "c023bb4dd6f5af980c4507c7ddd4efec0cd234da",
+            "tarball": "https://registry.npmmirror.com/@njt-tools-open/solidjs-component-docs-creator/-/solidjs-component-docs-creator-1.0.3.tgz",
+            "fileCount": 19,
+            "unpackedSize": 184024,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEUCIHuxKqm3fZcSumoDFyqX4tUVn2AiTT9dmXXAM21DknPqAiEA+MKa459MX5q0Uq02Ajgq+PULmX680aNo7Z+AGyzuPxc="
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJilJYcACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmowOhAAj5NSN4sUXEwwuX2QzLX4MnDgYMOyfzQellJ7tIgJhvrivQn+\r\nsVIUgXGLvIFuBOiErzAD9i47Y1wqPxKdOn0mupu0JXhqJSYT8gn85CdzIMd3\r\n5AU8135p4GK0BrtF+6HiRdmcdqejOosD9gZzCQHlLUutKxlrgdjQlBdWivgQ\r\nOU60j4IMwGdsSfFUtqCVEBsZFZ1w+qRGnG/JatHC1QSfEh5TnbzELMtXEvdG\r\nGFWtnlmOYIqqnh6iZ2Pgwm7ZgJGnVzfw/LEzWqRC/BOhVPr0iZzsumcs57Hw\r\nJ9SDag0kboYKOSb2utDRbg2qhdZUWpCPRIg07EBl9Tu8KPKLUbEdnZWH8oEG\r\nwcj2k8RfGlRwKEn7nRp0AczVMX5/d/OhqRIJ8N6pUintmWKnqDD1mZgearpk\r\nyXPcXEsCsD0Uekq75nnMevkZcVvR0lNhqYAeHL6t0opV+EpHJDxQNW/J/+hv\r\nNmtifwcOvCvmo8+opmTuGWcQnNPvlxsbhpCb9KXrYKaDNmnQFEw8joavtA5p\r\nEFKx61DiP3YYgMqp8jX3QyXPuLn2OnGm8uuBh6f/iNBUlrB+uJuHiv3VpRgk\r\nCf8/VwiKba9ehXCee0yqoC5aNFnPzrhkBDQJlItBacD8AnodB/rBm0QpVQI4\r\nUg7TJworwSo95hPOhZSA73IIACfnFbeoxZY=\r\n=LUJA\r\n-----END PGP SIGNATURE-----\r\n",
+            "size": 32344
+          },
+          "_hasShrinkwrap": false
+        }
+      },
+      "cachedAt": 1656316347997
+    },
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "No matching version found for @njt-tools-open/solidjs-component-docs-creator@1.0.6",
+      "code": "ERR_PNPM_NO_MATCHING_VERSION",
+      "stack": "pnpm: No matching version found for @njt-tools-open/solidjs-component-docs-creator@1.0.6\n    at resolveNpm (/Users/xiaoyown/.nvm/versions/node/v14.17.6/pnpm-global/5/node_modules/.pnpm/pnpm@7.2.1/node_modules/pnpm/dist/pnpm.cjs:84760:15)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async Object.resolve (/Users/xiaoyown/.nvm/versions/node/v14.17.6/pnpm-global/5/node_modules/.pnpm/pnpm@7.2.1/node_modules/pnpm/dist/pnpm.cjs:84942:28)\n    at async run (/Users/xiaoyown/.nvm/versions/node/v14.17.6/pnpm-global/5/node_modules/.pnpm/pnpm@7.2.1/node_modules/pnpm/dist/pnpm.cjs:91747:23)"
+    }
+  }
+}

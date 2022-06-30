@@ -1,3 +1,8 @@
 node_modules
 lib
 .vscode
+
+tsconfig.tsbuildinfo
+
+# docs cache files
+.s25c

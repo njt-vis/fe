@@ -10,3 +10,9 @@ packages/*/node_modules
 bin
 dist
 lib
+
+# build info
+tsconfig.tsbuildinfo
+
+# docs cache files
+.s25c

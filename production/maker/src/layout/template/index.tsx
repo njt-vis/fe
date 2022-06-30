@@ -1,6 +1,6 @@
 import { render } from 'solid-js/web';
 
-import Swap from '../swap';
+import Swap from '../../swap';
 
 import App from './App';
 import { store } from './store';

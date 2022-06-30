@@ -26,7 +26,7 @@ class Listener {
   };
 
   /** 监听 */
-  public on = (key: string, exec: Exec, { once }: OnOptions = {}) => {
+  public on = (key: string, exec: Exec, { once }: OnOptions = {}): void => {
     const { taskMap } = this;
     const tasks = taskMap.get(key);
 
@@ -47,7 +47,7 @@ class Listener {
   };
 
   /** 取消监听 */
-  public off = (key: string, exec: Exec) => {
+  public off = (key: string, exec: Exec): void => {
     const { taskMap } = this;
     const tasks = taskMap.get(key);
 
@@ -62,7 +62,7 @@ class Listener {
   };
 
   /** 触发监听 */
-  public emit = (key: string) => {
+  public emit = (key: string): void => {
     const { taskMap } = this;
     const tasks = taskMap.get(key) as Task[];
     // 尚未监听
@@ -81,10 +81,10 @@ class Listener {
     }
   };
 
-  public getTask = (name: string) => this.taskMap.get(name);
+  public getTask = (name: string): Task[] | undefined => this.taskMap.get(name);
 
   /** 销毁, 清空所有监听 */
-  public destroy = () => {
+  public destroy = (): void => {
     this.taskMap.clear();
   };
 }

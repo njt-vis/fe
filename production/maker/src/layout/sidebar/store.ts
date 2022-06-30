@@ -15,14 +15,14 @@ export const setItems = (items: Sidebar.ItemModel[]): void => {
 };
 
 /** 挂载插件 */
-export const showPluginUnFoldView = (name: string) => {
+export const showPluginUnFoldView = (name: string): void => {
   store.active = store.active === name ? '' : name;
 };
 /** 卸载插件 */
-export const hidePluginUnFoldView = () => {
+export const hidePluginUnFoldView = (): void => {
   store.active = '';
 };
 /** 切换插件 */
-export const switchPluginUnFoldView = (name: string) => {
+export const switchPluginUnFoldView = (name: string): void => {
   store.active = name;
 };

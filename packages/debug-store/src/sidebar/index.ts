@@ -15,14 +15,14 @@ const store = common.createDisabledProxy<Sidebar.MakerStore>(originStore);
 /** 调试插件变更 */
 export const onDebugPluginsChange = (
   fn: (plugins: Sidebar.ItemModel[]) => void
-) => {
+): void => {
   listener.on(EVENTS.DEBUG_SIDEBAR_ITEMS_CHANGE, () => {
     fn(store.plugins);
   });
 };
 
 /** 更新插件列表 */
-export const updatePlugins = (plugins: Sidebar.ItemModel[]) => {
+export const updatePlugins = (plugins: Sidebar.ItemModel[]): void => {
   originStore.plugins = plugins;
   listener.emit(EVENTS.DEBUG_SIDEBAR_ITEMS_CHANGE);
 };

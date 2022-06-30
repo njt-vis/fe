@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "build:prepare": "pnpm --filter './packages/**' build",
     "commit": "git-cz",
     "lint": "npm run lint:es && npm run lint:prettier",
     "lint:ts": "tsc --project ./tsconfig.json --noEmit",

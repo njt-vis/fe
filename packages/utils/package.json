@@ -4,6 +4,7 @@
   "description": "> TODO: description",
   "author": "xiaoYown <qzy09101018@sina.com>",
   "license": "ISC",
+  "main": "lib/utils.cjs",
   "module": "lib/utils.mjs",
   "types": "lib/index.d.ts",
   "directories": {
